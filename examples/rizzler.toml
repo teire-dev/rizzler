@@ -12,7 +12,7 @@ default_provider = "openai"
 # Claude options: "claude-3-opus-20240229", "claude-3-sonnet-20240229"
 # Gemini options: "gemini-pro"
 # Bedrock options depend on which models you have access to in your AWS account
-default_model = "gpt-4-turbo"
+default_model = "gpt-5.6-sol"
 
 # Custom system prompt to override the default one
 # This controls how the AI approaches conflict resolution
