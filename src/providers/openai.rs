@@ -29,7 +29,7 @@ impl OpenAIProvider {
         // Get other configuration from environment variables
         let base_url = env::var("RIZZLER_OPENAI_BASE_URL").ok();
         let org_id = env::var("RIZZLER_OPENAI_ORG_ID").ok();
-        let model = env::var("RIZZLER_OPENAI_MODEL").unwrap_or_else(|_| "gpt-4-turbo".to_string());
+        let model = env::var("RIZZLER_OPENAI_MODEL").unwrap_or_else(|_| "gpt-5.6-sol".to_string());
         let timeout_seconds = env::var("RIZZLER_TIMEOUT")
             .ok()
             .and_then(|s| s.parse::<u64>().ok())
